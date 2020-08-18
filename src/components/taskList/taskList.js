@@ -1,6 +1,6 @@
 import React from 'react';
 import Task from '../task';
-
+import './taskList.css';
 const TodoList = () => {
   return (
     <ul className='todo-list' >

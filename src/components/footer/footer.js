@@ -1,5 +1,6 @@
 import React from 'react';
-import FilterList from '../taskFilter'
+import FilterList from '../taskFilter';
+import './footer.css';
 const Footer = () => {
     return (
         <footer className='footer'>

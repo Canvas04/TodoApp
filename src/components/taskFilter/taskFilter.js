@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './taskFilter.css';
 const FilterList = () => {
     return (
       <ul className='filters'>
