@@ -4,17 +4,9 @@ import ReactDOM from 'react-dom';
 import Footer from './components/footer'
 import Header from './components/header';
 import TodoList from './components/taskList';
+import Main from './components/main';
 
 
-const Main = () => {
-  return (
-    <section className='main'>
-
-      <TodoList />
-      <Footer />
-    </section>
-  )
-}
 const App = () => {
   return (
     <section className='todoApp'>
