@@ -1,6 +1,9 @@
 import React from 'react';
 import './task.css';
+
+
 const Task = (props) => {
+
     return (
       <div className='view'>
         <input className='toggle' type='checkbox' />
