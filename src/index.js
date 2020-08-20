@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import Footer from './components/footer'
@@ -7,13 +7,17 @@ import TodoList from './components/taskList';
 import Main from './components/main';
 
 
-const App = () => {
-  return (
-    <section className='todoApp'>
-      <Header />
-      <Main />
-    </section>
-  )
+class App extends Component {
+  
+  render() {
+    return (
+      <section className='todoApp'>
+        <Header />
+        <Main />
+      </section>
+    )
+  }
+
 }
 
 ReactDOM.render(<App />, document.querySelector('#root'))
