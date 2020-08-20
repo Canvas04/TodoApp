@@ -60,3 +60,6 @@
 	color: #cdcdcd;
 	text-decoration: line-through;
 }
+.done {
+	text-decoration: line-through;
+}
