@@ -31,7 +31,7 @@ render() {
         <span className='created'>created {this.props.date} ago</span>
       </label>
       <button className='icon icon-edit'></button>
-      <button className='icon icon-destroy'></button>
+      <button className='icon icon-destroy ' onClick={this.props.onDeleted}></button>
     </div>
   )
 }
