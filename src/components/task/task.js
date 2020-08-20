@@ -7,11 +7,20 @@ class Task extends Component {
   state = {
     done: false
   }
-  onSpanCLick = () => {
-    this.setState({
+  onSpanClick = () => {
+    const {done} = this.state;
+    if(!done) {
+      this.setState({
       done:true
     })
+  }else {
+    this.setState({
+      done:false
+    })
   }
+    
+  }
+
   render() {
     const { done } = this.state;
     let classNames = 'description';
@@ -22,7 +31,7 @@ class Task extends Component {
       <div className='view'>
         <input className='toggle' type='checkbox' />
         <label>
-          <span className={classNames} onClick = {this.onSpanCLick}>{this.props.state} </span>{' '}
+          <span className={classNames} onClick = {this.onSpanClick}>{this.props.state} </span>{' '}
           <span className='created'>created {this.props.date} ago</span>
         </label>
         <button className='icon icon-edit'></button>
